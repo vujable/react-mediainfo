@@ -1,0 +1,8 @@
+src/*
+!src/assets/
+
+webpack.config.js
+.babelrc
+.eslintrc.js
+
+public

@@ -1,38 +1,38 @@
 {
-  "name": "react-mediainfo",
-  "version": "0.0.6",
-  "description": "React Mediainfo.js",
-  "license": "MIT",
-  "scripts": {
-    "build": "webpack --optimize-minimize",
-    "update": "webpack --optimize-minimize && git add . && git commit -m 'update' && git push && npm version patch && npm publish"
-  },
-  "dependencies": {
-    "mediainfo.js": "^0.1.4"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "webpack": "4.44.1",
-    "webpack-cli": "3.2.1"
-  },
-  "main": "./lib/react-mediainfo.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vujable/react-mediainfo.git"
-  },
-  "keywords": [
-    "mediainfo.js"
-  ],
-  "author": "Vukasin Pesic",
-  "bugs": {
-    "url": "https://github.com/vujable/react-mediainfo/issues"
-  },
-  "homepage": "https://github.com/vujable/react-mediainfo#readme"
+    "name": "react-mediainfo",
+    "version": "0.0.6",
+    "description": "React Mediainfo.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack --optimize-minimize",
+        "update": "webpack --optimize-minimize && git add . && git commit -m 'update' && git push && npm version patch && npm publish"
+    },
+    "dependencies": {
+        "mediainfo.js": "^0.1.4",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.1",
+        "@babel/preset-react": "^7.10.4",
+        "babel-loader": "^8.1.0",
+        "webpack": "4.44.1",
+        "webpack-cli": "3.2.1"
+    },
+    "main": "./lib/react-mediainfo.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vujable/react-mediainfo.git"
+    },
+    "keywords": [
+        "mediainfo.js"
+    ],
+    "author": "Vukasin Pesic",
+    "bugs": {
+        "url": "https://github.com/vujable/react-mediainfo/issues"
+    },
+    "homepage": "https://github.com/vujable/react-mediainfo#readme"
 }

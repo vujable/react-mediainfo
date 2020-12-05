@@ -1,5 +1,5 @@
 
-import Worker from "./mediainfo.worker.js";
+import Worker from "workerize-loader!./mediainfo.worker.js";
 const { wasm } = Worker();
 
 export function inspect(file) {

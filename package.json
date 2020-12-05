@@ -19,7 +19,7 @@
     "webpack": "4.44.1",
     "webpack-cli": "3.2.1"
   },
-  "main": "webpack.config.js",
+  "main": "./lib/react-mediainfo.js",
   "directories": {
     "lib": "lib"
   },

@@ -5,7 +5,7 @@
     "license": "MIT",
     "scripts": {
         "build": "webpack --optimize-minimize",
-        "update": "webpack --optimize-minimize && git add . && git commit -m 'update' && git push && npm version patch && npm publish"
+        "update": "webpack --optimize-minimize && git add . && git commit -m 'update' && git push"
     },
     "dependencies": {
         "mediainfo.js": "^0.1.4"

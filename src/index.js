@@ -1,6 +1,6 @@
 //import React , {Component} from 'react'
 //import MediaInfo from 'mediainfo.js';
 
-export const test = () => {
-    return "test success"
+export default function printMe() {
+    console.log('I get called from print.js!');
 }

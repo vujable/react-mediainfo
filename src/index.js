@@ -1,4 +1,4 @@
-import worker from 'workerize-loader?inline!./worker.js'
+import worker from 'workerize-loader!./worker.js'
 const { wasm } = worker();
 
 export function inspect(file) {

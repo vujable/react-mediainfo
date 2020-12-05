@@ -16,7 +16,8 @@ module.exports = {
     output: {
         path: path.resolve('lib'),
         filename: 'react-mediainfo.js',
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
+        globalObject: 'this'
     },
     resolve: {
         extensions: ['.wasm']

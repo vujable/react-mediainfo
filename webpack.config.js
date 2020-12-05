@@ -7,7 +7,14 @@ module.exports = {
         path: path.resolve('lib'),
         filename: 'react-mediainfo.js',
     },
-    node: {
-        fs: 'empty'
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            }
+        ]
     }
+   
 };

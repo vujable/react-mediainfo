@@ -1,5 +1,5 @@
 
-var Worker = require("./mediainfo.worker.js");
+import Worker from "./mediainfo.worker.js";
 const { wasm } = Worker();
 
 export function inspect(file) {

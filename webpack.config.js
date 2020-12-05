@@ -24,9 +24,10 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.worker\.js$/,
-                use: ['workerize-loader']
+              test: /\.worker\.js$/,
+              use: { loader: "worker-loader" },
             },
+            
             {
                 test: /\.wasm$/,
                 include: path.resolve(__dirname, 'src'),

@@ -1,6 +1,11 @@
-import React , {Component} from 'react';
-import MediaInfo from 'mediainfo.js';
+//import MediaInfo from 'mediainfo.js';
+import worker from './mediainfo.worker.js';
+const { wasm } = worker();
 
-export function getMediaInfo() {
-    MediaInfo();
+export function inspect(file) {
+    return new Promise(async (resolve) => {
+        wasm(file).then((result) => {
+            resolve(result);
+        });
+    });
 }

@@ -1,13 +1,8 @@
 import React , {Component} from 'react';
 import MediaInfo from 'mediainfo.js';
 
-
 export function getMediaInfo() {
-    return new Promise((resolve) => {
-        MediaInfo().then((mediainfo) => {
-            resolve(mediainfo);
-        });
-    });
+    MediaInfo();
 }
 
 export class App extends Component {

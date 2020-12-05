@@ -6,6 +6,7 @@ module.exports = {
     output: {
         path: path.resolve('lib'),
         filename: 'react-mediainfo.js',
+        libraryTarget: 'commonjs2'
     },
     module: {
         rules: [
@@ -16,5 +17,4 @@ module.exports = {
             }
         ]
     }
-   
 };

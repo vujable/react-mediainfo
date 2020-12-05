@@ -12,7 +12,8 @@
         "react": "^16.0.0",
         "react-dom": "^16.0.0",
         "react-scripts": "3.4.3",
-        "worker-loader": "^3.0.6"
+        "worker-loader": "^3.0.6",
+        "worker-plugin": "^5.0.0"
     },
     "devDependencies": {
         "copy-webpack-plugin": "^6.3.1",

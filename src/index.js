@@ -1,5 +1,4 @@
-import Worker from 'workerize-loader?inline!./mediainfo.worker.js';
-
+const Worker = new Worker('./worker.js', { type: 'module' });
 const { wasm } = Worker();
 
 export function inspect(file) {

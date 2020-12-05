@@ -1,6 +1,7 @@
 const path = require('path');
 const { resolve } = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const WorkerPlugin = require('worker-plugin');
 
 const wasmFile = resolve(__dirname, 'node_modules', 'mediainfo.js', 'dist', 'MediaInfoModule.wasm');
 const dist = resolve(__dirname);
@@ -11,7 +12,8 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [{ from: wasmFile, to: dist }]
-        })
+        }),
+        new WorkerPlugin()
     ],
     output: {
         path: path.resolve('lib'),
@@ -23,7 +25,7 @@ module.exports = {
     },
     module: {
         rules: [
-
+    
             {
                 test: /\.wasm$/,
                 include: path.resolve(__dirname, 'src'),

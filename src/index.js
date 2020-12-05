@@ -15,5 +15,4 @@ class Index extends Component {
         this.Factory = getMediaInfo();
     }
 }
-Index.Factory = getMediaInfo();
 export default Index;

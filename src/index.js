@@ -1,9 +1,9 @@
-const Worker = new Worker('./worker.js', { type: 'module' });
-const { wasm } = Worker();
+import Worker from 'worker-loader!./worker.js';
+const worker = new Worker();
 
 export function inspect(file) {
     return new Promise(async (resolve) => {
-        wasm(file).then((result) => {
+        worker.wasm(file).then((result) => {
             resolve(result);
         });
     });

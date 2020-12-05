@@ -1,9 +1,9 @@
-import Worker from 'worker-loader!./worker.js';
-const worker = new Worker();
+import worker from 'workerize-loader?inline!./worker.js'
+const { wasm } = worker();
 
 export function inspect(file) {
     return new Promise(async (resolve) => {
-        worker.wasm(file).then((result) => {
+        wasm(file).then((result) => {
             resolve(result);
         });
     });

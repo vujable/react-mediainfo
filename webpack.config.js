@@ -25,7 +25,10 @@ module.exports = {
         rules: [
             {
                 test: /\.worker\.js$/,
-                use: { loader: 'worker-loader' }
+                use: {
+                    loader: 'workerize-loader',
+                    options: { inline: true }
+                }
             },
             {
                 test: /\.wasm$/,

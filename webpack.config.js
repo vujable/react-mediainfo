@@ -24,13 +24,7 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.worker\.js$/,
-                use: {
-                    loader: 'workerize-loader',
-                    options: { inline: true }
-                }
-            },
+           
             {
                 test: /\.wasm$/,
                 include: path.resolve(__dirname, 'src'),

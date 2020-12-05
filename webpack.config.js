@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: path.resolve('lib'),
         filename: 'react-mediainfo.js',
-        libraryTarget: 'commonjs2'
+        libraryTarget: 'umd'
     },
     module: {
         rules: [
@@ -16,5 +16,8 @@ module.exports = {
                 use: ['babel-loader']
             }
         ]
+    },
+    node: {
+        fs: "empty"
     }
 };

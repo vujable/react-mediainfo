@@ -1,6 +1,13 @@
-//import React , {Component} from 'react'
-//import MediaInfo from 'mediainfo.js';
+import MediaInfo from 'mediainfo.js';
 
 export function test() {
-    console.warn('I get called from print.js!');
+    console.warn('testing package');
+}
+export function getMediaInfo() {
+    console.warn('starting getMediaInfo');
+    return new Promise((resolve) => {
+        MediaInfo().then((mediainfo) => {
+            resolve(mediainfo);
+        });
+    });
 }

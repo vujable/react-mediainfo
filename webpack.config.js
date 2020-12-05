@@ -4,7 +4,6 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 const wasmFile = resolve(__dirname, 'node_modules', 'mediainfo.js', 'dist', 'MediaInfoModule.wasm');
 const dist = resolve(__dirname);
-const wasmExtensionRegExp = /\.wasm$/;
 
 module.exports = {
     mode: 'production',
@@ -39,11 +38,3 @@ module.exports = {
         fs: 'empty'
     }
 };
-//config.module.rules.forEach((rule) => {
-//    (rule.oneOf || []).forEach((oneOf) => {
-//        if (oneOf.loader && oneOf.loader.indexOf('file-loader') >= 0) {
-//            // Make file-loader ignore WASM files
-//            oneOf.exclude.push(wasmExtensionRegExp);
-//        }
-//    });
-//});

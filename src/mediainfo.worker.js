@@ -1,5 +1,3 @@
-// import MediaInfo from 'mediainfo.js';
-
 const readChunk = (file) => (chunkSize, offset) =>
   new Promise((resolve, reject) => {
     const reader = new FileReader()

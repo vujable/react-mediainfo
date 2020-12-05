@@ -1,6 +1,6 @@
-//import MediaInfo from 'mediainfo.js';
-import worker from './mediainfo.worker.js';
-const { wasm } = worker();
+
+import Worker from "./mediainfo.worker.js";
+const { wasm } = Worker();
 
 export function inspect(file) {
     return new Promise(async (resolve) => {

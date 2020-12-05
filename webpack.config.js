@@ -26,9 +26,7 @@ module.exports = {
             {
                 test: /\.worker\.js$/,
                 loader: "worker-loader",
-                options: {
-                  publicPath: "/workers/",
-                }
+                options: { inline: "fallback" },
             },
             {
                 test: /\.wasm$/,

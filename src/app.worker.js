@@ -11,7 +11,7 @@ const readChunk = (file) => (chunkSize, offset) =>
   });
 
 export async function getInfo(file) {
-  const MediaInfo = await require("./mediainfo.bundle.js");
+  const MediaInfo = await require("./mediainfo.js");
   return new Promise((res) => {
     MediaInfo().then((mediainfo) => {
       mediainfo

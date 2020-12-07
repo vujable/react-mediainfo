@@ -31,4 +31,6 @@ getInfo(file)
 
 ## Roadmap 📈
 
--Cut size in half. 
+- Cut size in half. 
+- Create Hooks.
+- Create Wrapper Components.

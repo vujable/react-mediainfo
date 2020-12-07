@@ -10,7 +10,7 @@ Try mediainfo.js in your browser which provides the same results: [https://media
 
 Very simple 
 
-- Installation
+#### Installation
 
 ```js
 npm install react-mediainfo
@@ -19,6 +19,8 @@ npm install react-mediainfo
 
 yarn add react-mediainfo
 ```
+
+#### Usage
 
 ```js
 import { getInfo } from 'react-mediainfo'

@@ -1,6 +1,6 @@
-import worker from "./app.worker";
+import worker from './app.worker';
 let instance = worker();
 
 export function getInfo(file) {
-  return instance.getInfo(file);
+    return instance.getInfo(file);
 }
